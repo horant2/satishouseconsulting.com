@@ -3,106 +3,109 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Satis House Consulting. Supply chain and procurement for owner-led companies.</title>
-<meta name="description" content="Tristan Horan runs supply chain and procurement programs for owner-led manufacturers and distributors. A published playbook, a fee paid only out of verified savings, and results that show up in the bank account. Fort Worth, Texas.">
+<title>Satis House Consulting. Cost out, cash in, and a playbook your team keeps running.</title>
+<meta name="description" content="Tristan Horan is a supply chain executive who takes cost out of owner-led companies, puts the cash back on the balance sheet, leaves a playbook that keeps working, and sets the artificial intelligence strategy for what comes next. Paid out of verified savings.">
+<link rel="icon" href="logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..700,0..100&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#E7EAE3;
-    --paper-deep:#D3D9CF;
-    --ink:#161A1B;
-    --ink-soft:#3B4243;
-    --verdigris:#2F6B5F;
-    --verdigris-deep:#214E45;
+    --ink:#0F0F0F;
+    --ink-2:#181816;
+    --line:#2A2925;
+    --paper:#EDE7DA;
+    --paper-soft:#B9B3A6;
+    --gold:#C9A24A;
+    --gold-deep:#A8842F;
     --measure:38rem;
   }
   *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
+  html{scroll-behavior:smooth;background:var(--ink)}
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-  body{margin:0;background:var(--paper);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
-  a{color:var(--verdigris-deep);text-decoration-thickness:1px;text-underline-offset:3px}
-  a:focus-visible,button:focus-visible{outline:3px solid var(--verdigris);outline-offset:3px}
-  h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:400;margin:0;line-height:1.05;letter-spacing:-0.015em}
+  body{margin:0;background:var(--ink);color:var(--paper);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:var(--gold);text-decoration-thickness:1px;text-underline-offset:3px}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+  h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:400;margin:0;line-height:1.05;letter-spacing:-0.012em;color:var(--paper)}
   p{margin:0 0 1.1em;max-width:var(--measure)}
   .wrap{width:min(100% - 3rem, 70rem);margin-inline:auto}
 
-  header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--paper-deep)}
-  header .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;padding:1rem 0}
-  .mark{font-family:"Fraunces",serif;font-size:1.3rem;color:var(--ink);text-decoration:none;font-variation-settings:"SOFT" 60}
-  nav a{margin-left:1.4rem;font-size:.95rem;text-decoration:none;color:var(--ink-soft)}
-  nav a:hover{color:var(--ink);text-decoration:underline}
-  nav .book{color:var(--paper);background:var(--ink);padding:.5rem .9rem;border-radius:2px}
-  nav .book:hover{background:var(--verdigris-deep);text-decoration:none}
-  @media (max-width:640px){nav a:not(.book){display:none}}
+  header{position:sticky;top:0;z-index:5;background:rgba(15,15,15,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.7rem 0}
+  .mark{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--paper)}
+  .mark img{height:56px;width:auto;display:block}
+  nav a{margin-left:1.4rem;font-size:.95rem;text-decoration:none;color:var(--paper-soft)}
+  nav a:hover{color:var(--paper);text-decoration:underline}
+  nav .book{color:var(--ink);background:var(--gold);padding:.55rem 1rem;border-radius:2px;font-weight:600}
+  nav .book:hover{background:#DDB65C;text-decoration:none;color:var(--ink)}
+  @media (max-width:700px){nav a:not(.book){display:none}}
 
-  .hero{padding:5.5rem 0 4.5rem}
-  .hero h1{font-size:clamp(2.5rem,6.6vw,5.4rem);max-width:16ch;font-variation-settings:"opsz" 144,"SOFT" 40}
+  .hero{padding:5rem 0 4.5rem}
+  .hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) 22rem;gap:3rem;align-items:center}
+  @media (max-width:860px){.hero .wrap{grid-template-columns:1fr} .hero .portrait{order:-1;max-width:16rem}}
+  .hero h1{font-size:clamp(2.5rem,6.4vw,5.2rem);max-width:15ch;font-variation-settings:"opsz" 144,"SOFT" 30}
   .hero h1 span{display:block}
-  .hero h1 .turn{font-style:italic;color:var(--verdigris-deep)}
-  .hero p{font-size:1.25rem;margin-top:2rem;max-width:36rem;color:var(--ink-soft)}
-  .cta{display:inline-block;padding:.95rem 1.5rem;border-radius:2px;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:500}
-  .cta:hover{background:var(--verdigris-deep)}
+  .hero h1 .turn{font-style:italic;color:var(--gold)}
+  .hero p{font-size:1.25rem;margin-top:2rem;max-width:36rem;color:var(--paper-soft)}
+  .cta{display:inline-block;padding:.95rem 1.5rem;border-radius:2px;background:var(--gold);color:var(--ink);text-decoration:none;font-weight:600}
+  .cta:hover{background:#DDB65C;color:var(--ink)}
   .cta-row{display:flex;gap:1.25rem;align-items:center;flex-wrap:wrap;margin-top:1.75rem}
-  .cta-row a.quiet{font-size:1rem}
+  .portrait{position:relative}
+  .portrait img{width:100%;display:block;border-radius:2px;filter:grayscale(1) contrast(1.05)}
+  .portrait figcaption{margin-top:.8rem;font-size:.92rem;color:var(--paper-soft);line-height:1.45}
+  .portrait figcaption strong{color:var(--paper);font-weight:600;display:block}
 
-  /* Proof strip: the one bold element on the page */
-  .proof{background:var(--ink);color:var(--paper);padding:3.25rem 0}
+  .proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:3rem 0;background:var(--ink-2)}
   .proof ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:2rem 2.5rem}
-  .proof .n{display:block;font-family:"Fraunces",serif;font-size:clamp(2.4rem,4.5vw,3.6rem);line-height:1;font-variation-settings:"opsz" 144;color:#F2F5EE}
+  .proof .n{display:block;font-family:"Fraunces",serif;font-size:clamp(2.4rem,4.5vw,3.6rem);line-height:1;font-variation-settings:"opsz" 144;color:var(--gold)}
   .proof .n small{font-size:.5em;vertical-align:.45em;margin-left:.1em}
-  .proof .l{display:block;margin-top:.55rem;color:#B9C2B6;font-size:.95rem;max-width:20ch;line-height:1.4}
+  .proof .l{display:block;margin-top:.55rem;color:var(--paper-soft);font-size:.95rem;max-width:20ch;line-height:1.4}
 
-  section{padding:4.75rem 0;border-bottom:1px solid var(--paper-deep)}
+  section{padding:4.75rem 0;border-bottom:1px solid var(--line)}
   section h2{font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:1.5rem;max-width:22ch}
   .two{display:grid;grid-template-columns:minmax(0,18rem) minmax(0,1fr);gap:3rem}
   @media (max-width:760px){.two{grid-template-columns:1fr;gap:1.5rem}}
-  .lede{font-size:1.15rem;color:var(--ink-soft)}
+  .lede{font-size:1.15rem;color:var(--paper-soft)}
 
-  /* Offers: three columns, priced */
-  .offers{display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:0;border:1px solid var(--ink)}
-  .offer{padding:1.9rem 1.6rem 2rem;border-right:1px solid var(--ink);display:flex;flex-direction:column}
+  .three{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:2.5rem 3rem;margin-top:1rem}
+  .three h3{font-size:1.45rem;margin-bottom:.7rem}
+  .three h3::before{content:"";display:block;width:2.5rem;height:2px;background:var(--gold);margin-bottom:1rem}
+  .three p{color:var(--paper-soft);margin:0}
+
+  .offers{display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:0;border:1px solid var(--line)}
+  .offer{padding:1.9rem 1.6rem 2rem;border-right:1px solid var(--line);display:flex;flex-direction:column}
   .offer:last-child{border-right:0}
-  @media (max-width:900px){.offer{border-right:0;border-bottom:1px solid var(--ink)} .offer:last-child{border-bottom:0}}
-  .offer h3{font-size:1.55rem;margin-bottom:.35rem}
-  .offer .for{color:var(--ink-soft);font-size:.98rem;margin-bottom:1.2rem}
-  .offer .price{font-family:"Fraunces",serif;font-size:2.1rem;line-height:1;margin:.25rem 0 .2rem}
-  .offer .terms{font-size:.92rem;color:var(--ink-soft);margin-bottom:1.2rem}
-  .offer ul{margin:0 0 1.5rem;padding-left:1.1rem;color:var(--ink-soft);font-size:.98rem}
+  @media (max-width:900px){.offer{border-right:0;border-bottom:1px solid var(--line)} .offer:last-child{border-bottom:0}}
+  .offer h3{font-size:1.5rem;margin-bottom:.35rem}
+  .offer .for{color:var(--paper-soft);font-size:.98rem;margin-bottom:1.2rem}
+  .offer .price{font-family:"Fraunces",serif;font-size:2.2rem;line-height:1;margin:.25rem 0 .2rem;color:var(--gold)}
+  .offer .terms{font-size:.92rem;color:var(--paper-soft);margin-bottom:1.2rem}
+  .offer ul{margin:0 0 1.5rem;padding-left:1.1rem;color:var(--paper-soft);font-size:.98rem}
   .offer ul li{margin-bottom:.4rem}
   .offer .cta{margin-top:auto;align-self:flex-start;padding:.75rem 1.2rem;font-size:.98rem}
-  .offer.lead{background:var(--paper-deep)}
-  .guarantee{margin-top:2rem;padding:1.4rem 1.6rem;border-left:4px solid var(--verdigris);max-width:44rem}
-  .guarantee p{margin:0}
+  .offer.lead{background:var(--ink-2)}
+  .verify{margin-top:2rem;padding:1.4rem 1.6rem;border-left:3px solid var(--gold);max-width:44rem;color:var(--paper-soft)}
+  .verify p{margin:0}
 
-  /* Playbook is a real sequence, so it is numbered */
-  ol.play{list-style:none;margin:0;padding:0;counter-reset:st;border-top:1px solid var(--ink)}
-  ol.play li{counter-increment:st;display:grid;grid-template-columns:4rem 14rem 1fr;gap:1.5rem;padding:1.4rem 0;border-bottom:1px solid var(--paper-deep)}
-  ol.play li::before{content:counter(st);font-family:"Fraunces",serif;font-size:1.6rem;line-height:1;color:var(--verdigris-deep)}
-  ol.play h3{font-size:1.2rem;font-family:"IBM Plex Sans",sans-serif;font-weight:600;letter-spacing:0;line-height:1.3}
-  ol.play p{margin:0;color:var(--ink-soft)}
+  ol.play{list-style:none;margin:0;padding:0;counter-reset:st;border-top:1px solid var(--line)}
+  ol.play li{counter-increment:st;display:grid;grid-template-columns:4rem 14rem 1fr;gap:1.5rem;padding:1.4rem 0;border-bottom:1px solid var(--line)}
+  ol.play li::before{content:counter(st);font-family:"Fraunces",serif;font-size:1.6rem;line-height:1;color:var(--gold)}
+  ol.play h3{font-size:1.15rem;font-family:"IBM Plex Sans",sans-serif;font-weight:600;letter-spacing:0;line-height:1.3}
+  ol.play p{margin:0;color:var(--paper-soft)}
   @media (max-width:760px){ol.play li{grid-template-columns:3rem 1fr} ol.play li p{grid-column:2}}
 
-  /* Experience: a timeline, so it is a list with dates in the margin */
-  .exp{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
-  .exp li{display:grid;grid-template-columns:9rem 1fr;gap:1.5rem;padding:1.3rem 0;border-bottom:1px solid var(--paper-deep)}
-  .exp .when{color:var(--verdigris-deep);font-family:"Fraunces",serif;font-size:1.05rem;line-height:1.5}
-  .exp h3{font-size:1.15rem;font-family:"IBM Plex Sans",sans-serif;font-weight:600;letter-spacing:0;line-height:1.35}
-  .exp .where{color:var(--ink-soft);font-size:.95rem;margin:.1rem 0 .5rem}
-  .exp p{margin:0;color:var(--ink-soft);font-size:.98rem}
-  @media (max-width:560px){.exp li{grid-template-columns:1fr;gap:.2rem}}
-  .creds{margin-top:2rem;color:var(--ink-soft);font-size:.98rem;max-width:44rem}
+  .who{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.5rem 2.5rem;margin-top:.5rem;padding:0;list-style:none}
+  .who li{padding-top:1rem;border-top:1px solid var(--gold);color:var(--paper-soft);font-size:1rem}
+  .who li strong{display:block;color:var(--paper);font-weight:600;margin-bottom:.25rem}
 
-  .name{background:var(--ink);color:var(--paper)}
-  .name h2{color:var(--paper)}
-  .name p{color:#C9CFC6}
+  .name{background:var(--ink-2)}
+  .name p{color:var(--paper-soft)}
 
   .contact p{font-size:1.15rem}
   .contact .details{margin-top:1.6rem;font-size:1.05rem;line-height:1.9}
   .contact .details a{margin-right:1.4rem}
 
-  footer{padding:2.5rem 0 3rem;font-size:.9rem;color:var(--ink-soft)}
+  footer{padding:2.5rem 0 3rem;font-size:.9rem;color:var(--paper-soft)}
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
 </style>
 </head>
@@ -110,11 +113,11 @@
 
 <header>
   <div class="wrap">
-    <a class="mark" href="#top">Satis House Consulting</a>
+    <a class="mark" href="#top" aria-label="Satis House Consulting"><img src="logo.jpg" alt="Satis House Consulting"></a>
     <nav aria-label="Sections">
-      <a href="#offers">Services and pricing</a>
+      <a href="#what">What I do</a>
+      <a href="#pricing">Pricing</a>
       <a href="#playbook">The playbook</a>
-      <a href="#experience">Experience</a>
       <a class="book" href="#contact">Book a call</a>
     </nav>
   </div>
@@ -123,24 +126,30 @@
 <main id="top">
   <div class="hero">
     <div class="wrap">
-      <h1>
-        <span>Your suppliers know</span>
-        <span>your business better</span>
-        <span class="turn">than you know theirs.</span>
-      </h1>
-      <p>I fix that for owner-led manufacturers, distributors and service companies. Fourteen years buying, running plants and leading supply chain for companies that had to make money every month. A published playbook, a fee paid out of the savings, and results you can find on the bank statement.</p>
-      <div class="cta-row">
-        <a class="cta" href="#contact">Book a thirty minute call</a>
-        <a class="quiet" href="#offers">See services and pricing</a>
+      <div>
+        <h1>
+          <span>Cost out. Cash in.</span>
+          <span class="turn">A playbook your team</span>
+          <span class="turn">keeps running after I leave.</span>
+        </h1>
+        <p>I am a supply chain executive, not a consultant with a deck. I have set global procurement and supply chain strategy, led the teams that executed it, and answered to owners and boards for the number. I get paid out of the savings, and I leave behind a system and an artificial intelligence strategy that keep working without me.</p>
+        <div class="cta-row">
+          <a class="cta" href="#contact">Book a thirty minute call</a>
+          <a href="#pricing">See how the fee works</a>
+        </div>
       </div>
+      <figure class="portrait">
+        <img src="tristan.jpg" alt="Tristan Horan" width="360" height="360">
+        <figcaption><strong>Tristan Horan</strong>Founder, Satis House Consulting. Private equity references available on request.</figcaption>
+      </figure>
     </div>
   </div>
 
   <div class="proof" aria-label="Results">
     <div class="wrap">
       <ul>
-        <li><span class="n"><small>$</small>2.5<small>million</small></span><span class="l">saved in year one on $43 million of indirect spend</span></li>
-        <li><span class="n"><small>$</small>7<small>million</small></span><span class="l">annual raw material savings as head of supply chain</span></li>
+        <li><span class="n"><small>$</small>2.5<small>million</small></span><span class="l">saved in year one on $43 million of spend</span></li>
+        <li><span class="n"><small>$</small>7<small>million</small></span><span class="l">a year taken out of raw material cost</span></li>
         <li><span class="n">750<small>to</small>250</span><span class="l">suppliers, with no loss of service</span></li>
         <li><span class="n">20<small>%</small></span><span class="l">more output from one plant in six months</span></li>
         <li><span class="n"><small>$</small>266<small>k</small></span><span class="l">cash freed from payment terms in under ninety days</span></li>
@@ -148,14 +157,34 @@
     </div>
   </div>
 
-  <section id="offers">
+  <section id="what">
+    <div class="wrap">
+      <h2>Three things, in this order.</h2>
+      <div class="three">
+        <div>
+          <h3>Cost savings that hit the profit and loss statement</h3>
+          <p>Not a slide of "identified opportunities." Signed contracts at lower prices, corrected payment terms, and cash that is in your account. Every dollar is tied out against your ledger so your accountant and your lender see the same number I do.</p>
+        </div>
+        <div>
+          <h3>A playbook that works in perpetuity</h3>
+          <p>The process, the supplier files, the approval flow, the bid templates and the savings tracker all stay with you. Your buyer or operations lead runs it. The point of the engagement is that you do not need another one.</p>
+        </div>
+        <div>
+          <h3>An artificial intelligence strategy for the new world</h3>
+          <p>Which of your processes agents should own, in what order, what it costs, who is accountable, and what to leave alone. I have built and shipped agents inside a real procurement operation, so the strategy comes with a working example, not a vendor pitch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
     <div class="wrap">
       <h2>You pay out of the savings. Not before.</h2>
       <p class="lede">No hourly billing, no monthly retainer, no percentage of anything projected. My fee is a share of savings that are real: a signed contract at a lower price, or cash that has landed in your account. If the number does not move, the fee is zero.</p>
 
       <div class="offers">
         <div class="offer">
-          <h3>Supply chain diagnostic</h3>
+          <h3>Diagnostic</h3>
           <p class="for">Two weeks. The only fixed fee on this page, and it comes back to you.</p>
           <div class="price">$2,500</div>
           <p class="terms">Credited in full against the savings program if you continue.</p>
@@ -198,7 +227,7 @@
         </div>
       </div>
 
-      <div class="guarantee">
+      <div class="verify">
         <p>How savings are verified: old price against new price on the same item, multiplied by the volume you actually buy in the following twelve months, reconciled against your accounts payable. Cash is counted when it is in your bank. You see the same spreadsheet I do.</p>
       </div>
     </div>
@@ -229,69 +258,21 @@
         </li>
         <li>
           <h3>Put a process and an agent in place, then leave</h3>
-          <p>A procurement policy people follow, an approval flow that takes minutes, and one artificial intelligence agent doing the repetitive work: invoice matching, quote comparison, contract review. Your team runs it. I built my own platform this way and use it on every engagement.</p>
+          <p>A procurement policy people follow, an approval flow that takes minutes, and one agent doing the repetitive work: invoice matching, quote comparison, contract review. Your team runs it. I built my own platform this way and use it on every engagement.</p>
         </li>
       </ol>
     </div>
   </section>
 
-  <section id="experience">
+  <section id="who">
     <div class="wrap">
-      <h2>Fourteen years on the buying side of the table.</h2>
-      <p class="lede">Buyer, corporate procurement, plant manager in England, head of supply chain through a change of ownership, acquisition integration, and now advising private equity owners and their portfolio companies. Every role was measured on the same thing: did the number move.</p>
-
-      <ul class="exp">
-        <li>
-          <span class="when">2025 to now</span>
-          <div>
-            <h3>Founder, Satis House Consulting</h3>
-            <p class="where">Fort Worth, Texas</p>
-            <p>Retained by the chief financial officer of Fenix Parts, a Stellex Capital portfolio company, to build the indirect procurement function from nothing across a multi-site network. Delivered $2.5 million of savings on $43 million of spend in year one against a $2.0 million target, freed $266 thousand of cash by correcting payment terms, and put agents to work on compliance and invoice reconciliation.</p>
-          </div>
-        </li>
-        <li>
-          <span class="when">2025</span>
-          <div>
-            <h3>Supply chain lead, integration team, RHI Magnesita</h3>
-            <p class="where">Tampa, Florida</p>
-            <p>Led the supply chain side of the RHI Magnesita acquisition of Resco Products: network optimization, procurement alignment, local-for-local sourcing roadmap and supplier transitions.</p>
-          </div>
-        </li>
-        <li>
-          <span class="when">2021 to 2025</span>
-          <div>
-            <h3>Senior director of supply chain, Resco Products</h3>
-            <p class="where">Charlotte, North Carolina</p>
-            <p>Executive team member after a change of ownership. Rebuilt a supply chain group that lacked focus and tools, delivering $7 million in annual raw material savings and the best financial results in the company's history.</p>
-          </div>
-        </li>
-        <li>
-          <span class="when">2018 to 2021</span>
-          <div>
-            <h3>Plant manager, Resco Products</h3>
-            <p class="where">Ashby de la Zouch, England</p>
-            <p>Ran a refractory plant. Used Theory of Constraints to cut lead times fifteen percent and raise output twenty percent inside six months, and secured government funding for plant innovation.</p>
-          </div>
-        </li>
-        <li>
-          <span class="when">2015 to 2018</span>
-          <div>
-            <h3>Indirect procurement manager, Resco Products</h3>
-            <p class="where">Pittsburgh, Pennsylvania</p>
-            <p>Cut the supply base from 750 suppliers to 250 with no loss of service, put contract management in place, and wrote the training and standard procedures that made it stick.</p>
-          </div>
-        </li>
-        <li>
-          <span class="when">2012 to 2015</span>
-          <div>
-            <h3>Buyer, Pneumafil (Nederman) and Performance Friction</h3>
-            <p class="where">Charlotte, North Carolina</p>
-            <p>Packaging, freight, fasteners and high-specification defense components. Vendor-managed inventory, supplier portals and the daily grind of getting parts in on time.</p>
-          </div>
-        </li>
+      <h2>Who you are working with</h2>
+      <ul class="who">
+        <li><strong>A supply chain executive</strong>Senior director of supply chain through a change of ownership, plant manager in England, acquisition integration lead, and now advisor to private equity owners and their portfolio companies.</li>
+        <li><strong>Global procurement and supply chain strategy</strong>Set and executed across the United States, the United Kingdom and China. Raw materials, freight, packaging, indirect spend, working capital.</li>
+        <li><strong>At home with owners and boards</strong>I report to chief financial officers and operating partners for a living. You will get the number, the risk and the recommendation in one page.</li>
+        <li><strong>Builds with artificial intelligence, not just talks about it</strong>Designed and shipped agent chains that read contracts, build supplier intelligence and reconcile invoices inside a live procurement operation.</li>
       </ul>
-
-      <p class="creds">Master of Business Administration in international business, Nottingham Trent University. Bachelor of Business Administration, Winthrop University. Certified Professional in Supply Management, Institute for Supply Management. Worked in the United States, the United Kingdom and China.</p>
     </div>
   </section>
 
@@ -308,12 +289,11 @@
   <section id="contact" class="contact">
     <div class="wrap">
       <h2>Talk to Tristan</h2>
-      <p>Thirty minutes, no preparation needed. Bring last year's supplier list or the one contract that bothers you. If none of the three services fits, I will say so on the call and tell you what I would do instead.</p>
+      <p>Thirty minutes, no preparation needed. Bring last year's supplier list or the one contract that bothers you. If none of this fits, I will say so on the call and tell you what I would do instead.</p>
       <a class="cta" href="mailto:tristan.horan@satishouseconsulting.com?subject=Supply%20chain%20call">Email Tristan Horan</a>
       <div class="details">
         <a href="tel:+17047778280">704 777 8280</a>
-        <a href="REPLACE_WITH_LINKEDIN_URL" rel="me">LinkedIn</a>
-        <a href="REPLACE_WITH_BOOKING_LINK">Book directly on the calendar</a>
+        <a href="https://www.linkedin.com/in/tristan-horan-585a512a5/" rel="me">LinkedIn</a>
       </div>
     </div>
   </section>
